@@ -89,7 +89,7 @@ License:        GPLv2+
 %endif # suse
 Group:          System/Monitoring
 Name:           icinga2
-Version:        2.14.2
+Version:        2.14.3
 Release:        %{revision}%{?dist}
 Url:            https://www.icinga.com/
 Source:         https://github.com/Icinga/%{name}/archive/v%{version}.tar.gz
@@ -810,6 +810,9 @@ fi
 %{_datadir}/nano/%{name}.nanorc
 
 %changelog
+* Wed Nov 13 2024 Tsvetan Gerov <tsvetan@gerov.eu> 2.14.3-1
+- Update to 2.14.3 to address CVE-2024-49369
+
 * Thu Jun 06 2024 Tsvetan Gerov <tsvetan@gerov.eu> 2.14.2-1
 - Update to 2.14.2
 
